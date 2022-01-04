@@ -20,6 +20,7 @@ public class StreamPrint {
         PS.println(s1.Name);
         PS.println(s1.Branch);
         PS.close();
+        FOS.close();
         System.out.println("Written Successfully in Student.txt File");
         FileInputStream FIS = new FileInputStream("C:\\MyJava\\Student.txt");
         BufferedReader BR = new BufferedReader(new InputStreamReader(FIS));
@@ -31,5 +32,7 @@ public class StreamPrint {
         System.out.println("Name: "+ s2.Name);
         System.out.println("Branch: "+ s2.Branch);
         System.out.println("Read Successfully from Student.txt File");
+        FIS.close();
+        BR.close();
     }
 }
