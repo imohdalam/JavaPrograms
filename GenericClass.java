@@ -1,5 +1,6 @@
 package generic;
 
+@SuppressWarnings("unchecked")
 class Generic<List>{
     List[] data = (List[]) new Object[5];
     int length = 0;
