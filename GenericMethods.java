@@ -49,12 +49,12 @@ public class GenericMethod {
               P.display();
           }
 
-        // WildCard<?> Unbounded with extends
+        // WildCard<?> bounded with extends i.e, Upper Bound
         static void fun2(ClassG<? extends Apple> P){
             P.display();
         }
 
-    // WildCard<?> Unbounded with super
+    // WildCard<?> bounded with super i.e, Lower Bound
        static void fun3(ClassG<? super Mango> P){
            P.display();
          }
