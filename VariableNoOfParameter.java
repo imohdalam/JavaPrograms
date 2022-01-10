@@ -12,6 +12,6 @@ public class Main {
         return sum;
     }
     public static void main(String[] args) {
-        System.out.println("Sum: "+sumAllNumber(5,-8,9,6,4,0));
+        System.out.println("Sum: "+sumAllNumber(5,-8,9,6,4,9,0));
     }
 }
