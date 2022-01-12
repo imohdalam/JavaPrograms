@@ -29,5 +29,23 @@ public class TimeClass {
         LocalTime LtNew = Lt.minusHours(5);
         // LocalTime Immutable Class
         System.out.println(LtNew);
+
+        ZonedDateTime ZDT = ZonedDateTime.now(ZoneId.of("Pacific/Apia"));
+        System.out.println(ZDT);
+        OffsetDateTime ODT = OffsetDateTime.now(ZoneId.of("America/Los_Angeles"));
+        System.out.println(ODT);
+        MonthDay MD = MonthDay.now();
+        LocalDate qa = MD.atYear(2021);
+        System.out.println(qa);
+        YearMonth YM = YearMonth.now();
+        System.out.println(YM);
+        Year Y = Year.now();
+        System.out.println(Y);
+        Period P = Period.of(2202,02,05);
+        System.out.println(P.addTo(LocalDate.now()));
+        Instant I = Instant.now();
+        System.out.println(I);
+        Duration D = Duration.ofDays(1);
+        System.out.println(D);
     }
 }
